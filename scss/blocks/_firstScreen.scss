@@ -1,0 +1,69 @@
+.first_screen{
+    background:url('/img/hero_bg.jpg') no-repeat;
+    background-size: cover; 
+    height: calc(100vh - 100px);
+    position: relative;
+}
+.hand_wrapper{
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+}
+.screen_bg{
+    position: absolute;
+    right: 59px;
+    top: 191px;
+}
+.screen_shadow{
+    position: absolute;
+    right: 143px;
+    top: 191px;
+}
+.hero_describe{
+    padding-top: 180px;
+    color: #fff;
+    max-width: 440px;
+}
+.hero__title{
+    @include ralBold;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+.hero_subtitle{
+    @include ralLight;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+.hero_title_text{
+    font-size: 14px;
+    @include ralReg;
+    color: rgb(157, 199, 209);
+    line-height: 1.714;
+    margin-bottom: 56px;
+
+}
+.btn {
+    transition: all 0.3s;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(13, 72, 98, 0);
+    border-radius: 30px;
+    padding: 20px 55px;
+    opacity: 0.5;
+    font-size: 21px;
+    @include ralReg;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    &:focus, &:active{
+        outline: none;
+    }
+    &:hover{
+        background: #fff;
+        color: #27626c;
+        cursor: pointer;
+    }
+  }

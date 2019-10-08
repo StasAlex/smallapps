@@ -3,6 +3,10 @@
           box-sizing: border-box;
 }
 
+body {
+  max-width: 2540px;
+}
+
 .container {
   max-width: 1170px;
   margin: auto;
@@ -75,7 +79,7 @@ header {
 }
 
 .navbar__wrap a:hover {
-  color: #1e21ca;
+  color: #27626c;
 }
 
 .nav__wrapper, .nav__contacts {
@@ -143,5 +147,85 @@ header {
 
 .phone__icon, .mail__icon {
   margin-right: 10px;
+}
+
+.first_screen {
+  background: url("/img/hero_bg.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+
+.hand_wrapper {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+}
+
+.screen_bg {
+  position: absolute;
+  right: 59px;
+  top: 191px;
+}
+
+.screen_shadow {
+  position: absolute;
+  right: 143px;
+  top: 191px;
+}
+
+.hero_describe {
+  padding-top: 180px;
+  color: #fff;
+  max-width: 440px;
+}
+
+.hero__title {
+  font-family: 'Raleway Bold', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.hero_subtitle {
+  font-family: 'Raleway Light', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.hero_title_text {
+  font-size: 14px;
+  font-family: 'Raleway Regular', sans-serif;
+  color: #9dc7d1;
+  line-height: 1.714;
+  margin-bottom: 56px;
+}
+
+.btn {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  background-color: rgba(13, 72, 98, 0);
+  border-radius: 30px;
+  padding: 20px 55px;
+  opacity: 0.5;
+  font-size: 21px;
+  font-family: 'Raleway Regular', sans-serif;
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.btn:focus, .btn:active {
+  outline: none;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #27626c;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
