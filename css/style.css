@@ -3,7 +3,145 @@
           box-sizing: border-box;
 }
 
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Extra Bold';
+  src: url("../fonts/ProximaNova-Extrabld.eot");
+  src: url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype") url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Light';
+  src: url("../fonts/Raleway-Light.eot");
+  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Light.woff") format("woff"), url("../fonts/Raleway-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url("../fonts/Raleway-Bold.eot");
+  src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background: red;
+  font-family: 'Raleway Light', sans-serif;
+}
+
+header {
+  font-family: 'Myriad Pro Regular', sans-serif;
+}
+
+.navbar__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3c3d42;
+  font-size: 30px;
+  line-height: 1.2;
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
+}
+
+.navbar__wrap a:hover {
+  color: #1e21ca;
+}
+
+.nav__wrapper, .nav__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo_text {
+  font-family: 'Proxima Nova Extra Bold', sans-serif;
+  font-weight: 700;
+}
+
+.logo_text:hover {
+  cursor: pointer;
+}
+
+.nav__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav__menu ul li {
+  margin-right: 30px;
+}
+
+.nav__menu ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #3c3d42;
+}
+
+.navbar__phone,
+.navbar__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__phone:hover,
+.navbar__mail:hover {
+  cursor: pointer;
+}
+
+.navbar__phone_link {
+  font-size: 18px;
+  color: #3c3d42;
+  font-family: 'Raleway Regular', sans-serif;
+  text-decoration: none;
+  margin-right: 45px;
+}
+
+.navbar__mail_link {
+  font-size: 18px;
+  color: #3c3d42;
+  font-family: 'Raleway Regular', sans-serif;
+  text-decoration: none;
+}
+
+.phone__icon, .mail__icon {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

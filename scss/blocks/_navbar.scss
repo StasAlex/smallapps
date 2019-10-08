@@ -1,0 +1,66 @@
+.navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    align-items: center;
+    color: rgb(60, 61, 66);
+    font-size: 30px;
+    line-height: 1.2;
+    transition: all, .3s;
+    a:hover{
+        color: #1e21ca;
+    }
+}
+.nav__wrapper, .nav__contacts{
+    display: flex;
+    align-items: center;
+
+}
+.logo_text {
+    @include proxima;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.nav__menu ul {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+
+    li {
+        margin-right: 30px;
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: rgb(60, 61, 66);
+        }
+    }
+}
+
+.navbar__phone,
+.navbar__mail {
+    display: flex;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.navbar__phone_link {
+    font-size: 18px;
+    color: rgb(60, 61, 66);
+    @include ralReg;
+    text-decoration: none;
+    margin-right: 45px;
+}
+
+.navbar__mail_link{
+    font-size: 18px;
+    color: rgb(60, 61, 66);
+    @include ralReg;
+    text-decoration: none;
+}
+.phone__icon, .mail__icon{
+    margin-right: 10px;
+}
