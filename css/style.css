@@ -79,7 +79,7 @@ header {
 }
 
 .navbar__wrap a:hover {
-  color: #27626c;
+  color: #5dca88;
 }
 
 .nav__wrapper, .nav__contacts {
@@ -147,6 +147,10 @@ header {
 
 .phone__icon, .mail__icon {
   margin-right: 10px;
+}
+
+.phone__icon i, .mail__icon i {
+  font-size: 18px;
 }
 
 .first_screen {
@@ -227,5 +231,221 @@ header {
   background: #fff;
   color: #27626c;
   cursor: pointer;
+}
+
+.feature {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.feature_title_wrapper {
+  margin: auto;
+  max-width: 770px;
+  text-align: center;
+  padding-bottom: 130px;
+}
+
+.feature_title {
+  font-size: 24px;
+  font-family: 'Raleway Bold', sans-serif;
+  color: #afb8b8;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.feature_title_describe {
+  font-size: 16px;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  color: #afb8b8;
+  line-height: 1.5;
+  width: 770px;
+}
+
+.tabs_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs_box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 450px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-right: 145px;
+}
+
+.tabs_box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.tabs_box ul li:last-child {
+  margin-bottom: 0;
+}
+
+.tabs_box ul li a {
+  min-width: 360px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: #afb8b8;
+}
+
+.tabs_box ul li a:hover {
+  cursor: pointer;
+}
+
+.tab_icon {
+  min-width: 50px;
+  margin-right: 45px;
+  text-align: center;
+}
+
+.icon_custom {
+  font-size: 50px;
+  color: #afb8b8;
+}
+
+.icon_active {
+  color: #5dca88;
+}
+
+.icon_big {
+  font-size: 170px;
+}
+
+.tab_big_icon {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.tab_wrapper .tab_title {
+  font-size: 24px;
+  font-family: 'Raleway Bold', sans-serif;
+  color: #636c6c;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+.tab_text {
+  font-size: 16px;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  color: #afb8b8;
+  line-height: 1.5;
+}
+
+#tab1,
+#tab3,
+#tab4,
+#tab5 {
+  display: none;
+}
+
+.active {
+  border-right: 10px solid #5dca88;
+}
+
+.product_feature {
+  padding: 85px 0;
+  background-color: #f2f9fe;
+}
+
+.product_feature_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature_descr {
+  width: 50%;
+  padding-top: 160px;
+}
+
+.product_feature_title {
+  font-size: 36px;
+  font-family: 'Raleway Bold', sans-serif;
+  color: #5dca88;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+
+.product_feature_subtitle {
+  font-size: 36px;
+  font-family: 'Raleway Regular', sans-serif;
+  color: #afb8b8;
+  line-height: 1.2;
+  padding-bottom: 40px;
+}
+
+.product_feature_text {
+  font-size: 16px;
+  font-family: 'Raleway Regular', sans-serif;
+  color: #afb8b8;
+  line-height: 1.5;
+  padding-bottom: 90px;
+}
+
+.product_feature_button {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #636c6c;
+  background-color: rgba(13, 72, 98, 0);
+  font-size: 21px;
+  font-family: 'Raleway Bold', sans-serif;
+  line-height: 1.2;
+  color: #636c6c;
+  opacity: 0.5;
+  padding: 25px 55px;
+  border-radius: 35px;
+}
+
+.feature_img {
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone_screen_image {
+  position: absolute;
+  top: 115px;
+  left: 180px;
+}
+
+.gallery {
+  padding-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@
     line-height: 1.2;
     transition: all, .3s;
     a:hover{
-        color: #27626c;
+        color:$primary;
     }
 }
 .nav__wrapper, .nav__contacts{
@@ -63,4 +63,7 @@
 }
 .phone__icon, .mail__icon{
     margin-right: 10px;
+    i{
+        font-size: 18px;
+    }
 }

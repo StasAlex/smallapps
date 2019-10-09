@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="/scss/owlcarousel2/owl.carousel.min.css">
     <link rel="stylesheet" href="/scss/owlcarousel2/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/4476d7ab0e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 
 
@@ -23,13 +24,13 @@
                         <div class="logo navbar__logo">
                             <a class="logo_text">SmallApps</a>
                         </div>
-                        <nav class="nav nav__menu">
+                        <nav id="menu" class="nav nav__menu">
                             <ul>
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">Features</a>
+                                    <a href="#top">Features</a>
                                 </li>
                                 <li>
                                     <a href="#">Screenshots</a>
@@ -43,15 +44,14 @@
                     <div class="nav__contacts">
                         <div class="navbar__phone">
                             <div class="phone__icon">
-                                <img src="/img/phone.png" alt="phone">
-                            </div>
+                                <i class="fas fa-phone-square-alt"></i> </div>
                             <div class="phone">
                                 <a class="navbar__phone_link" href="tel:+18800123456">800-123-456</a>
                             </div>
                         </div>
                         <div class="navbar__mail">
                             <div class="mail__icon">
-                                <img src="/img/mail.png" alt="mail_icon">
+                                <i class="far fa-envelope"></i>
                             </div>
                             <div class="mail">
                                 <a class="navbar__mail_link" href="mailto:smallapps@gmail.com">smallapps@gmail.com</a>
@@ -65,7 +65,7 @@
     </header>
 
     <div class="owl-carousel owl-theme">
-        
+
         <div class="first_screen">
             <div class="container">
                 <div class="hero_describe">
@@ -134,7 +134,168 @@
         </div>
     </div>
 
-    <section class="feature"></section>
+    <section class="feature" id="top">
+        <div class="feature_title_wrapper">
+            <h2 class="feature_title">Heading Feature title goes here</h2>
+            <p class="feature_title_describe">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia
+                at tempor vitae, porta at arcu.
+                Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet. </p>
+        </div>
+        <div class="container">
+            <div class="tabs_wrapper">
+                <div class="tabs_box">
+                    <ul class="tabs_menu">
+                        <li href="#tab1">
+                            <a>
+                                <span class="tab_icon">
+                                    <!-- <img src="img/icon_heart.png" alt="icon_heart"> -->
+                                    <i class="far fa-heart icon_custom"></i>
+                                </span>
+                                <span class="tab_title">Heading title one</span>
+                            </a>
+                        </li>
+                        <li class="active" href="#tab2">
+                            <a>
+                                <span class="tab_icon">
+                                    <!-- <img src="img/icon_bag.png" alt="icon_bag"> -->
+                                    <i class="fa fa-briefcase icon_custom icon_active"></i>
+                                </span>
+                                <span class="tab_title">Heading title two</span>
+                            </a>
+                        </li>
+                        <li href="#tab3">
+                            <a>
+                                <span class="tab_icon">
+                                    <!-- <img src="img/icon_leaf.png" alt="icon_leaf"> -->
+                                    <i class="fas fa-leaf icon_custom"></i>
+                                </span>
+                                <span class="tab_title">Heading title three</span>
+                            </a>
+                        </li>
+                        <li href="#tab4">
+                            <a>
+                                <span class="tab_icon">
+                                    <!--<img src="img/icon_window.png" alt="icon_window">-->
+                                    <i class="far fa-square icon_custom"></i>
+                                </span>
+                                <span class="tab_title">Heading title four</span>
+                            </a>
+                        </li>
+                        <li href="#tab5">
+                            <a>
+                                <span class="tab_icon">
+                                    <!--<img src="img/icon_umbrella.png" alt="icon_umbrella">-->
+                                    <i class="fas fa-umbrella icon_custom"></i>
+                                </span>
+                                <span class="tab_title">Heading title five</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab_wrapper">
+                    <div class="tab" id="tab1">
+                        <div class="tab_big_icon">
+                            <!-- <img src="/img/icon_big_bag.png" alt="icon_big_bag">-->
+                            <i class="far fa-heart icon_big icon_active"></i>
+                        </div>
+                        <h3 class="tab_title">Heading Feature title goes here</h3>
+                        <p class="tab_text">Nunc accumsan hendrerit nunc, ac
+                            venenatis magna facilisis quis. Ut sit amet mi ac
+                            neque sodales facilisis. Nullam tempus fermentum
+                            lorem nec interdum. Ut id orci id sapien imperdiet
+                            vehicula. Etiam quis dignissim ante. Donec convallis
+                            tincidunt ligula, ac luctus mi interdum a.
+                        </p>
+                    </div>
+                    <div class="tab" id="tab2">
+                        <div class="tab_big_icon">
+                            <!-- <img src="/img/icon_big_bag.png" alt="icon_big_bag">-->
+                            <i class="fa fa-briefcase icon_big icon_active"></i>
+                        </div>
+                        <h3 class="tab_title">Heading Feature title goes here</h3>
+                        <p class="tab_text">Nunc accumsan hendrerit nunc, ac
+                            venenatis magna facilisis quis. Ut sit amet mi ac
+                            neque sodales facilisis. Nullam tempus fermentum
+                            lorem nec interdum. Ut id orci id sapien imperdiet
+                            vehicula. Etiam quis dignissim ante. Donec convallis
+                            tincidunt ligula, ac luctus mi interdum a.
+                        </p>
+                    </div>
+                    <div class="tab" id="tab3">
+                        <div class="tab_big_icon">
+                            <!-- <img src="/img/icon_big_bag.png" alt="icon_big_bag">-->
+                            <i class="fa fa-leaf icon_big icon_active"></i>
+                        </div>
+                        <h3 class="tab_title">Heading Feature title goes here</h3>
+                        <p class="tab_text">Nunc accumsan hendrerit nunc, ac
+                            venenatis magna facilisis quis. Ut sit amet mi ac
+                            neque sodales facilisis. Nullam tempus fermentum
+                            lorem nec interdum. Ut id orci id sapien imperdiet
+                            vehicula. Etiam quis dignissim ante. Donec convallis
+                            tincidunt ligula, ac luctus mi interdum a.
+                        </p>
+                    </div>
+                    <div class="tab" id="tab4">
+                        <div class="tab_big_icon">
+                            <!--  <img src="/img/icon_big_bag.png" alt="icon_big_bag">-->
+                            <i class="fa fa-leaf icon_big icon_active"></i>
+                        </div>
+                        <h3 class="tab_title">Heading Feature title goes here</h3>
+                        <p class="tab_text">Nunc accumsan hendrerit nunc, ac
+                            venenatis magna facilisis quis. Ut sit amet mi ac
+                            neque sodales facilisis. Nullam tempus fermentum
+                            lorem nec interdum. Ut id orci id sapien imperdiet
+                            vehicula. Etiam quis dignissim ante. Donec convallis
+                            tincidunt ligula, ac luctus mi interdum a.
+                        </p>
+                    </div>
+                    <div class="tab" id="tab5">
+                        <div class="tab_big_icon">
+                            <!-- <img src="/img/icon_big_bag.png" alt="icon_big_bag">-->
+                            <i class="fa fa-umbrella icon_big icon_active"></i>
+                        </div>
+                        <h3 class="tab_title">Heading Feature title goes here</h3>
+                        <p class="tab_text">Nunc accumsan hendrerit nunc, ac
+                            venenatis magna facilisis quis. Ut sit amet mi ac
+                            neque sodales facilisis. Nullam tempus fermentum
+                            lorem nec interdum. Ut id orci id sapien imperdiet
+                            vehicula. Etiam quis dignissim ante. Donec convallis
+                            tincidunt ligula, ac luctus mi interdum a.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product_feature">
+        <div class="container">
+            <div class="product_feature_wrapper">
+                <div class="feature_descr">
+                    <h2 class="product_feature_title">Onec ultrices ultricies tellus perfect screens here</h2>
+                    <h2 class="product_feature_subtitle">Duis bibendum diam non erat facilisis tincidunt.</h2>
+                    <div class="product_feature_text">
+                        Duis bibendum diam non erat facilaisis tincidunt. Fusce
+                        leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar.
+                        Ut egestas orci in quam sollicitudin aliquet.
+                    </div>
+                    <button class="product_feature_button">LEARN MORE</button>
+                </div>
+                <div class="feature_img">
+                    <img src="/img/feature_mobile_phone.png" alt="" class="phone_image">
+                    <img src="/img/feature_mobile_phone_screen.png" alt="" class="phone_screen_image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="feature_title_wrapper">
+            <h2 class="feature_title">Heading Feature title goes here</h2>
+            <p class="feature_title_describe">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia
+                at tempor vitae, porta at arcu.
+                Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet. </p>
+        </div>
+    </section>
 
     <script src="js/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="js/libs/owlcarousel2/owl.carousel.min.js"></script>
