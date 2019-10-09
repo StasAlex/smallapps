@@ -1,11 +1,12 @@
 $(document).ready(function () {
   // Main Screen carousel
-  $(".owl-carousel").owlCarousel({
+  $(".slide_one").owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
+    smartSpeed: 1000,
     autoplayTimeout: 3000,
-    autoplaySpeed: 1500 / true,
+    navigation: true,
     dots: false,
     autoplayHoverPause: true
   });
@@ -13,8 +14,8 @@ $(document).ready(function () {
   //Features Tabs
   $(".tabs_menu li").click(function (event) {
     event.preventDefault();
-    $('.tabs_menu .active').removeClass('active');
-    $(this).addClass('active');
+    $('.tabs_menu .active_li').removeClass('active_li');
+    $(this).addClass('active_li');
 
     var tab = $(this).attr('href');
 
@@ -38,6 +39,16 @@ $(document).ready(function () {
       scrollTop: height
     }, 1000);
 
+  });
+
+  $(".slide_two").owlCarousel({
+    items: 3,
+    loop: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 3000,
+    nav: true,
+    autoplayHoverPause: true
   });
 
 

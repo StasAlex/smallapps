@@ -367,7 +367,7 @@ header {
   display: none;
 }
 
-.active {
+.active_li {
   border-right: 10px solid #5dca88;
 }
 
@@ -388,11 +388,22 @@ header {
 }
 
 .product_feature_title {
+  position: relative;
   font-size: 36px;
   font-family: 'Raleway Bold', sans-serif;
   color: #5dca88;
   line-height: 1.2;
   margin-bottom: 60px;
+}
+
+.product_feature_title:after {
+  content: "";
+  position: absolute;
+  background-color: #949c9c;
+  width: 104px;
+  height: 4px;
+  bottom: -20px;
+  left: 0;
 }
 
 .product_feature_subtitle {
@@ -423,6 +434,13 @@ header {
   opacity: 0.5;
   padding: 25px 55px;
   border-radius: 35px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.product_feature_button:hover {
+  background-color: #0d4862;
+  color: #fff;
 }
 
 .feature_img {
@@ -447,5 +465,110 @@ header {
 
 .gallery {
   padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.gallery_item {
+  position: relative;
+}
+
+.item_text {
+  text-align: center;
+  padding: 50px 55px;
+}
+
+.gallery_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery_img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery_phone_image {
+  height: 620px;
+  width: 300px;
+  background: url(/img/gallery_mobile1.png) no-repeat;
+}
+
+.gallery_phone_screen_image {
+  background: url(/img/gallery_mobile_phone_screen1.png) no-repeat;
+  height: 445px;
+  position: absolute;
+  top: 92px;
+  left: 69px;
+  width: 255px;
+}
+
+.owl-prev {
+  background-image: url("back.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.owl-next {
+  background-image: url("next.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.product_geature {
+  background-color: #f2f9fe;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: -2;
+}
+
+.product_geature_wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.geature_img {
+  width: 50%;
+  padding-right: 265px;
+}
+
+.geature_descr {
+  width: 50%;
+}
+
+.one {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.two {
+  position: absolute;
+  top: -17px;
+  left: 133px;
+  z-index: 0;
+}
+
+.geature_phone_screen_image {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 97px;
+  left: 29px;
 }
 /*# sourceMappingURL=style.css.map */

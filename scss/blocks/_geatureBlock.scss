@@ -1,0 +1,36 @@
+.product_geature {
+    background-color: rgb(242, 249, 254);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: -2;
+  }  
+.product_geature_wrapper {
+    position: relative;
+    display: flex;
+}
+.geature_img{
+    width: 50%;
+    padding-right: 265px;
+}
+.geature_descr {
+    width: 50%;
+}
+.one {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.two {
+    position: absolute;
+    top: -17px;
+    left: 133px;
+    z-index: 0;
+}
+.geature_phone_screen_image {
+    position: absolute;
+    display: block;
+    z-index: 3;
+    top: 97px;
+    left: 29px;
+}
