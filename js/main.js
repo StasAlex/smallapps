@@ -11,6 +11,19 @@ $(document).ready(function () {
     autoplayHoverPause: true
   });
 
+ // Gallery carousel
+  $(".slide_two").owlCarousel({
+    items: 3,
+    loop: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 3000,
+    nav: true,
+    dots: false,
+    autoplayHoverPause: true
+  });
+
+
   //Features Tabs
   $(".tabs_menu li").click(function (event) {
     event.preventDefault();
@@ -41,13 +54,14 @@ $(document).ready(function () {
 
   });
 
-  $(".slide_two").owlCarousel({
-    items: 3,
+  // Testimonials carousel
+  $(".slide_three").owlCarousel({
+    items: 1,
     loop: true,
     autoplay: true,
     smartSpeed: 1000,
     autoplayTimeout: 3000,
-    nav: true,
+    dots: true,
     autoplayHoverPause: true
   });
 

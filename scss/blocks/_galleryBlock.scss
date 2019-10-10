@@ -1,6 +1,37 @@
 .gallery {
     padding-top: 100px;
     padding-bottom: 130px;
+    .owl-theme .owl-nav{
+        position: relative;
+        button{
+            outline: none;
+            &:hover{
+                background: inherit;
+            }
+        }
+        .owl-prev {
+            color: rgb(159, 169, 169);
+            font-size: 90px;
+            font-weight: bold;
+            left: -120px;
+            top: -550px;
+            position: absolute;
+            &:hover{
+                color: $primary;
+            }
+          }
+          .owl-next {
+            color: rgb(159, 169, 169);
+            font-size: 90px;
+            font-weight: bold;
+            right: -120px;
+            top: -550px;
+            position: absolute;
+            &:hover{
+                color: $primary;
+            }
+          }
+    }
 }
 .gallery_item {
     position: relative;
@@ -32,15 +63,6 @@
     left: 69px;
     width: 255px;
 }
-.owl-prev{
-    background-image: url("back.png");
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-  }
-  .owl-next{
-    background-image: url("next.png");
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-  }
+
+
+  
