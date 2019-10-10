@@ -182,7 +182,7 @@ header {
 }
 
 .first_screen {
-  background: url("/img/hero_bg.jpg") no-repeat;
+  background: url("./img/hero_bg.jpg") no-repeat;
   background-size: cover;
   height: calc(100vh - 100px);
   position: relative;
