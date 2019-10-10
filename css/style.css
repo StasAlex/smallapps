@@ -182,7 +182,7 @@ header {
 }
 
 .first_screen {
-  background: url("/img/hero_bg.jpg") no-repeat;
+  background: url("./img/hero_bg.jpg") no-repeat;
   background-size: cover;
   height: calc(100vh - 100px);
   position: relative;
@@ -567,11 +567,11 @@ header {
 .gallery_phone_image {
   height: 620px;
   width: 300px;
-  background: url(/img/gallery_mobile1.png) no-repeat;
+  background: url(./img/gallery_mobile1.png) no-repeat;
 }
 
 .gallery_phone_screen_image {
-  background: url(/img/gallery_mobile_phone_screen1.png) no-repeat;
+  background: url(./img/gallery_mobile_phone_screen1.png) no-repeat;
   height: 445px;
   position: absolute;
   top: 92px;
@@ -635,7 +635,7 @@ header {
 }
 
 .author_foto {
-  background-image: url(/img/testimonials_foto.png);
+  background-image: url(./img/testimonials_foto.png);
   width: 100px;
   height: 100px;
   border-radius: 50%;
