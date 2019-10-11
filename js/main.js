@@ -65,6 +65,12 @@ $(document).ready(function () {
     autoplayHoverPause: true
   });
 
-
+  //Toggle responsive menu
+  $('#resp_menu_close').click( function (){
+    $('.nav__menu_responsive').fadeOut();
+  });
+  $('#resp_menu_open').click( function (){
+    $('.nav__menu_responsive').fadeIn();
+  });
 
 });
