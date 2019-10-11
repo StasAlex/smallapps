@@ -932,7 +932,7 @@ body {
   position: relative;
 }
 
-div.nav__menu_responsive {
+.nav__menu_responsive {
   position: absolute;
   background: black;
   z-index: 2;
@@ -943,7 +943,7 @@ div.nav__menu_responsive {
   color: #fff;
 }
 
-div.nav__menu_responsive i {
+.nav__menu_responsive i {
   position: absolute;
   top: 40px;
   right: 20px;
