@@ -25,7 +25,7 @@
         display: block;
     }
     .nav__menu_responsive{
-        display: block;
+        display: none;
     }
 }
 @media screen and (min-width: 700px){
@@ -42,7 +42,7 @@
 body{
     position: relative;
 }
-nav.nav__menu_responsive{
+div.nav__menu_responsive{
     position: absolute;
     background: black;
     z-index: 2;
