@@ -1,7 +1,7 @@
 .first_screen{
     background:url("../img/hero_bg.jpg") no-repeat;
     background-size: cover; 
-    height: calc(100vh - 100px);
+    height: calc(100vh - 110px);
     position: relative;
 }
 .hand_wrapper{
@@ -12,17 +12,21 @@
 .screen_bg{
     position: absolute;
     right: 59px;
-    top: 191px;
+    top: 123px;
 }
 .screen_shadow{
     position: absolute;
     right: 143px;
-    top: 191px;
+    top: 123px;
+}
+.hero_describe_wrapper{
+    display: flex;
+    justify-content: flex-start;
 }
 .hero_describe{
     padding-top: 180px;
     color: #fff;
-    max-width: 440px;
+    width: 440px;
 }
 .hero__title{
     @include ralBold;

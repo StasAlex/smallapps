@@ -184,7 +184,7 @@ header {
 .first_screen {
   background: url("../img/hero_bg.jpg") no-repeat;
   background-size: cover;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 110px);
   position: relative;
 }
 
@@ -197,19 +197,28 @@ header {
 .screen_bg {
   position: absolute;
   right: 59px;
-  top: 191px;
+  top: 123px;
 }
 
 .screen_shadow {
   position: absolute;
   right: 143px;
-  top: 191px;
+  top: 123px;
+}
+
+.hero_describe_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .hero_describe {
   padding-top: 180px;
   color: #fff;
-  max-width: 440px;
+  width: 440px;
 }
 
 .hero__title {
@@ -264,6 +273,10 @@ header {
 .feature {
   padding-top: 100px;
   padding-bottom: 130px;
+}
+
+.feature h3 {
+  margin: 0;
 }
 
 .feature_title_wrapper {
@@ -329,7 +342,6 @@ header {
 }
 
 .tabs_box ul li a {
-  min-width: 360px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +365,10 @@ header {
   min-width: 50px;
   margin-right: 45px;
   text-align: center;
+}
+
+.tab_title {
+  width: 200px;
 }
 
 .icon_custom {
@@ -379,6 +395,12 @@ header {
   color: #636c6c;
   line-height: 1.2;
   margin-bottom: 35px;
+}
+
+.tabs_menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tab_text {
@@ -950,7 +972,8 @@ body {
   font-size: 32px;
 }
 
-.menu_bars:hover, .resp_menu_close:hover {
+.menu_bars:hover,
+.resp_menu_close:hover {
   cursor: pointer;
   color: #5dca88;
 }
@@ -983,5 +1006,131 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
+}
+
+@media screen and (max-width: 1070px) {
+  .hand_wrapper,
+  .screen_bg,
+  .screen_shadow {
+    display: none;
+  }
+  .first_screen .container {
+    height: 100%;
+  }
+  .hero_describe_wrapper {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero_describe {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__title {
+    font-size: 28px;
+  }
+  .hero_subtitle {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero__title {
+    font-size: 24px;
+  }
+  .hero_subtitle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tabs_box ul li a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tab_icon {
+    margin: 10px;
+  }
+  .tab_title {
+    text-align: center;
+  }
+  .tabs_box ul li {
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .tabs_box ul li:last-child {
+    margin-right: 0;
+  }
+  .tabs_box ul li:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feature {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .tabs_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs_box ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 0;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .active_li {
+    border-right: none;
+    border-bottom: 10px solid #5dca88;
+  }
+  .tabs_box ul li {
+    height: auto;
+    margin-bottom: 20px;
+    height: 150px;
+    border-top: 5px solid #afb8b8;
+  }
+  .tab_title {
+    width: auto;
+    font-size: 12px;
+  }
+  .tab_text {
+    text-align: center;
+  }
+  .tab_wrapper .tab_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tab_title {
+    font-size: 10px;
+    word-wrap: break-word;
+  }
+  .tab_icon {
+    display: none;
+  }
+  .tabs_box ul li {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .tab_wrapper .tab_title {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

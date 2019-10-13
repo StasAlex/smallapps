@@ -1,6 +1,9 @@
 .feature {
     padding-top: 100px;
     padding-bottom: 130px;
+    h3{
+        margin: 0;
+    }
 }
 
 .feature_title_wrapper {
@@ -52,7 +55,7 @@
         }
 
         a {
-            min-width: 360px;
+            // width: 360px;
             height: 100%;
             display: flex;
             align-items: center;
@@ -72,6 +75,9 @@
     min-width: 50px;
     margin-right: 45px;
     text-align: center;
+}
+.tab_title{
+    width: 200px;
 }
 
 .icon_custom {
@@ -97,6 +103,10 @@
     color: $heading_color;
     line-height: 1.2;
     margin-bottom: 35px;
+}
+.tabs_menu li a{
+    display: flex;
+    // align-items: center;
 }
 
 .tab_text {
