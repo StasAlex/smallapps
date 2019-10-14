@@ -1,6 +1,7 @@
 .gallery {
     padding-top: 100px;
     padding-bottom: 130px;
+    margin: auto;
     .owl-theme .owl-nav{
         position: relative;
         button{
@@ -11,9 +12,9 @@
         }
         .owl-prev {
             color: rgb(159, 169, 169);
-            font-size: 90px;
+            font-size: 80px;
             font-weight: bold;
-            left: -120px;
+            left: -20px;
             top: -550px;
             position: absolute;
             &:hover{
@@ -22,9 +23,9 @@
           }
           .owl-next {
             color: rgb(159, 169, 169);
-            font-size: 90px;
+            font-size: 80px;
             font-weight: bold;
-            right: -120px;
+            right: -20px;
             top: -550px;
             position: absolute;
             &:hover{
@@ -42,7 +43,7 @@
 }
 .gallery_wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .gallery_img {
     position: relative;
@@ -51,17 +52,10 @@
     align-items: center;
 }
 .gallery_phone_image{
-    height: 620px;
-    width: 300px;
-    background: url("../img/gallery_mobile1.png") no-repeat;
+    position: relative;
 }
 .gallery_phone_screen_image {
-    background: url("../img/gallery_mobile_phone_screen1.png") no-repeat;
-    height: 445px;
     position: absolute;
-    top: 92px;
-    left: 69px;
-    width: 255px;
 }
 
 

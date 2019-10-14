@@ -15,12 +15,23 @@ $(document).ready(function () {
   $(".slide_two").owlCarousel({
     items: 3,
     loop: true,
-    autoplay: true,
+    // autoplay: true,
     smartSpeed: 1000,
     autoplayTimeout: 3000,
     nav: true,
     dots: false,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    responsive:{
+      0:{
+        items:1
+      },
+      700:{
+          items:2
+      },
+      1024:{
+          items:3
+      }
+  }
   });
 
 
