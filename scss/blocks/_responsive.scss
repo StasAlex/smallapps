@@ -238,3 +238,68 @@ body {
     }
 }
 
+// Product Feature Block responsives
+
+@media screen and (max-width: 1170px) {
+    .feature_img{
+        padding-left: 100px;
+    }
+    .phone_screen_image {
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product_feature_wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .feature_descr {
+        padding-top: 45px;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .feature_img {
+        padding-left: 20px;
+        margin: auto;
+        height: 300px;
+        overflow: hidden;
+    }
+    .phone_screen_image {
+        right: 88px;
+    }
+    .product_feature_title:after {
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product_feature_text {
+        margin: auto;
+        width: 80%;
+    }
+    .product_feature_text {
+        padding-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .product_feature_title {
+        font-size: 28px;
+    }
+    .product_feature_subtitle {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feature_img{
+        display: none;
+    }
+    .product_feature {
+        padding: 50px 0;
+    }
+
+}
