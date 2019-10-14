@@ -1,23 +1,23 @@
 .first_screen{
     background:url("../img/hero_bg.jpg") no-repeat;
     background-size: cover; 
-    height: calc(100vh - 110px);
+    height: 655px;
     position: relative;
 }
 .hand_wrapper{
     position: absolute;
-    bottom: -3px;
+    bottom: 0;
     right: 0;
 }
 .screen_bg{
     position: absolute;
     right: 59px;
-    top: 123px;
+    top: 112px;
 }
 .screen_shadow{
     position: absolute;
     right: 143px;
-    top: 123px;
+    top: 112px;
 }
 .hero_describe_wrapper{
     display: flex;

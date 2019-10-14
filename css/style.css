@@ -184,26 +184,26 @@ header {
 .first_screen {
   background: url("../img/hero_bg.jpg") no-repeat;
   background-size: cover;
-  height: calc(100vh - 110px);
+  height: 655px;
   position: relative;
 }
 
 .hand_wrapper {
   position: absolute;
-  bottom: -3px;
+  bottom: 0;
   right: 0;
 }
 
 .screen_bg {
   position: absolute;
   right: 59px;
-  top: 123px;
+  top: 112px;
 }
 
 .screen_shadow {
   position: absolute;
   right: 143px;
-  top: 123px;
+  top: 112px;
 }
 
 .hero_describe_wrapper {
@@ -299,7 +299,7 @@ header {
   font-family: 'Myriad Pro Regular', sans-serif;
   color: #afb8b8;
   line-height: 1.5;
-  width: 770px;
+  max-width: 770px;
 }
 
 .tabs_wrapper {
@@ -1022,6 +1022,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .hero_describe {
     padding-top: 0;
